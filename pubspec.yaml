@@ -1,7 +1,8 @@
 name: write_hello_world
-description: "A new Flutter package project."
+description: "A new Flutter package project which writes hello world."
 version: 0.0.1
-homepage:
+author: Shivangi Patel
+homepage: https://github.com/ShivangiPatel002/write_hello_world
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
@@ -10,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+   
 dev_dependencies:
   flutter_test:
     sdk: flutter
