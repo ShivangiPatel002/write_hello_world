@@ -1,40 +1,50 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# write_hello_world
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+`write_hello_world` is a simple Dart package that provides a widget to display "Hello World" centered on the screen. It is perfect for beginners who want to understand how to create and use basic widgets in Flutter.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Displays "Hello World" text
+- Centers the text on the screen
+- No customizations available, ensuring simplicity and consistency
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+### Prerequisites
 
-## Usage
+Ensure you have Flutter installed. You can follow the instructions on the [official Flutter website](https://flutter.dev/docs/get-started/install) to set up your environment.
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### Installation
 
-```dart
-const like = 'sample';
+Add `write_hello_world` to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  write_hello_world: ^1.0.0
 ```
 
-## Additional information
+## Usage
+To use the WriteHelloWorld widget, simply include it in your widget tree:
+```dart
+import 'package:write_hello_world/write_hello_world.dart';
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
-# write_hello_world
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Hello World Example'),
+        ),
+        body: Center(
+          child: WriteHelloWorld(),
+        ),
+      ),
+    );
+  }
+}
+
+void main() => runApp(MyApp());
+```
+
+

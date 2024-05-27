@@ -1,7 +1,7 @@
 name: write_hello_world
-description: "A new Flutter package project which writes hello world."
+description: "A flutter package project which writes hello world wherever you want."
 version: 0.0.1
-author: Shivangi Patel
+
 homepage: https://github.com/ShivangiPatel002/write_hello_world
 
 environment:
